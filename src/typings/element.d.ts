@@ -17,6 +17,17 @@ declare namespace VectorSpace {
     /// Last user to modify the element
     lastModifiedUser?: Reference
   };
+    
+  export interface History {
+    /// Date the change took place
+    modificationDate: Date,
+    /// User who made the change
+    user?: Reference,
+    /// Previous values
+    previousValues: {
+      [ key: string ]: any
+    }
+  };
   
   /// Modification Step
   export interface Modification extends Step {
@@ -41,7 +52,9 @@ declare namespace VectorSpace {
     /// Type of element
     type: string,
     /// Annotations on the element
-    annotations?: Annotation[]
+    annotations?: Annotation[],
+    /// Element's history
+    history?: History[]
   };
   
   ///Point Element
