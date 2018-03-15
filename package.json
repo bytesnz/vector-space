@@ -1,0 +1,51 @@
+{
+  "name": "vector-space",
+  "version": "0.1.0",
+  "description": "Extensible Remarkable plugin for embedding content in markdown",
+  "license": "GPL-3.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava",
+    "dev": "gulp",
+    "dev-small": "gulp --silent"
+  },
+  "keywords": [
+    "remarkable",
+    "markdown",
+    "embed",
+    "extension",
+    "plugin"
+  ],
+  "author": {
+    "name": "Jack Farley",
+    "email": "or4e3dsw@bytes.nz",
+    "url": "https://bytes.nz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bytesnz/vector-space.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bytesnz/vector-space/issues"
+  },
+  "homepage": "https://github.com/bytesnz/vector-space#readme",
+  "devDependencies": {
+    "@types/json-schema": "^6.0.0",
+    "ava": "^0.25.0",
+    "gulp": "^4.0.0",
+    "gulp-ava": "^0.18.0",
+    "gulp-tslint": "^8.1.3",
+    "gulp-typescript": "^4.0.1",
+    "json-schema-to-typescript": "^5.4.0",
+    "pump": "^3.0.0",
+    "require-from-string": "^2.0.1",
+    "tslint": "^5.9.1",
+    "tslint-eslint-rules": "^5.1.0",
+    "typescript": "^2.7.2"
+  },
+  "ava": {
+    "files": [
+      "**/*.tests.js"
+    ]
+  }
+}
