@@ -1,0 +1,23 @@
+{
+  "compileOnSave": true,
+  "allowSynthenticDefaultImports": false,
+  "compilerOptions": {
+    "strict": true,
+    "outDir": "./",
+    "target": "es6",
+    "noImplicitAny": false,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "jsx": "react",
+    "lib": ["es2015", "es2017", "dom"],
+    "sourceMap": false
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+  ],
+  "paths": {
+    "~/": "./"
+  }
+}
